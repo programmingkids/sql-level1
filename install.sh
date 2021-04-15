@@ -24,7 +24,7 @@ touch ~/environment/.c9/runners/MySQL.run
 cat << EOM >> ~/environment/.c9/runners/MySQL.run
 {
   "script": [
-    "mysql -u root workbook < \$file"
+    "mysql -u root workbook -vvv < \$file"
   ],
   "info": "MySQL Command Started \$project_path\$file_name",
   "env": {},
