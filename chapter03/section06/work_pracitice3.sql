@@ -1,0 +1,17 @@
+UPDATE
+  books
+SET
+    title
+  =
+    CONCAT(
+      title,
+      (
+        SELECT
+          category_name
+        FROM
+          category
+        WHERE
+          category.category_id=books.category_id
+      )
+    )
+;
