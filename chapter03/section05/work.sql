@@ -1,9 +1,0 @@
-UPDATE 
-  quest 
-SET 
-  answer1=3, 
-  answer2='', 
-  answered=NOW()
-WHERE
-  id=3
-;
