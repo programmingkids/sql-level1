@@ -1,5 +1,0 @@
-SELECT
-  title
-FROM 
-  books
-;

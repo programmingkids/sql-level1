@@ -1,5 +1,0 @@
-SELECT DISTINCT
-  referer
-FROM
-  access_log
-;

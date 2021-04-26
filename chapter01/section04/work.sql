@@ -1,9 +1,0 @@
-SELECT
-  name, 
-  answer1, 
-  answer2
-FROM
-	quest
-WHERE
-	sex='女'
-;
