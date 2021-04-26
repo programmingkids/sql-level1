@@ -1,5 +1,0 @@
-ALTER TABLE
-  books
-MODIFY
-  publish VARCHAR(100) NULL
-;
