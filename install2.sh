@@ -37,3 +37,8 @@ EOM
 
 echo " -- Created Mariadb Runner -- "
 echo " -- Completed Mariadb Setting -- "
+
+echo " -- Updateting Mariadb from 10.2 to 10.5 -- "
+sudo amazon-linux-extras disable lamp-mariadb10.2-php7.2
+sudo amazon-linux-extras install -y mariadb10.5
+echo " -- Successfully Completed to update Mariadb from 10.2 to 10.5 -- "
