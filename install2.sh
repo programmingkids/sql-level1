@@ -13,6 +13,10 @@ sudo systemctl enable mariadb
 sudo systemctl is-enabled mariadb
 echo " -- Setting done auto-start for mariadb -- "
 
+echo " -- Setting root user -- "
+sudo mysql -e "set password for root@localhost=''"
+echo " -- Setting done root user -- "
+
 echo " -- Creating Mariadb Database workbook -- "
 curl -L -o data.sql https://drive.google.com/uc?id=19IGZ5B9ffhuL_SoGyYLBRRGsvvPn1XvI
 mysql -u root -e "create database workbook default character set 'utf8'"
